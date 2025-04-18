@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FuelTure – Redefining Fuel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #d0f0c0;
+      color: #222;
+    }
+
+    header {
+      background: url('images/hero-bg.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+   header h1 {
+   font-size: 5rem; /* increased from 3.5rem */
+   text-shadow: 3px 3px 8px #000;
+   color: #50C878;
+   margin-top: 150px;
+   }
+
+   header p {
+   font-size: 1.6rem; /* increased from 1.2rem */
+   max-width: 750px;
+   margin-top: 20px;
+   text-shadow: 2px 2px 6px #000;
+   color: #228B22;
+   }
+
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 0.8rem 0 0.2rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+      padding: 0 1rem;
+    }
+
+    .btn {
+      background: #0077b6;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #023e8a;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>FuelTure</h1>
+  <p>Revolutionizing Fuel by Turning Plastic Waste into Clean Energy<br>
+<br>
+This project tells us the 3R technology<br>
+(3R = Recycle, Reuse & Resource of energy)<br>
+A)Plastic Waste Management<br>
+B)Low-Cost Fuel<br>
+C)Environmental Protection<br>
+</p>
+</header>
+
+<section>
+  <h2>Why Choose FuelTure?</h2>
+  <p>We transform plastic into fuel using smart, sustainable pyrolysis technology—reducing pollution, conserving resources, and innovating the future of energy.</p>
+  <div class="card-container">
+    <div class="card" onclick="openSection('tech')">
+      <img src="images/tech.jpg" alt="Technology">
+      <h3>Our Technology</h3>
+    </div>
+    <div class="card" onclick="openSection('team')">
+      <img src="images/team.jpg" alt="Team">
+      <h3>Meet the Team</h3>
+    </div>
+    <div class="card" onclick="openSection('mentors')">
+      <img src="images/mentors.jpg" alt="Mentors">
+      <h3>Our Mentors</h3>
+    </div>
+    <div class="card" onclick="openSection('innovation')">
+      <img src="images/innovation.jpg" alt="Innovation">
+      <h3>Our Inovation</h3>
+    </div>
+  </div>
+  <br>
+  <a class="btn" href="mailto:fuelture.project@gmail.com">Contact Us</a>
+</section>
+
+<!-- Innovation Section -->
+<section id="innovation" style="display:none;">
+  <h2>Uniqueness of Our Innovation</h2>
+  <p>At FuelTure, we’re not just turning plastic into fuel — we’re reshaping the entire approach with breakthrough ideas that are both efficient and eco-smart.</p>
+  
+  <div class="card-container">
+    <div class="card">
+      <img src="images/ai-pyrolysis.jpg" alt="AI-Integrated Pyrolysis">
+      <h3>AI-Integrated Pyrolysis</h3>
+      <p>We’ve built an intelligent system that learns and adapts using machine learning algorithms — automatically optimizing temperature, pressure, and plastic feedstock type to ensure the cleanest, most efficient fuel yield possible.</p>
+    </div>
+
+    <div class="card">
+      <h3>Smart Sensor Monitoring</h3>
+      <p>Our pilot plant is empowered by real-time sensors and IoT-based monitoring systems. From temperature regulation to gas detection, everything is automated for accuracy, safety, and precision efficiency — remotely accessible from anywhere.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/plastic-to-fuel.jpg" alt="Plastic Conversion">
+      <h3>Efficient Conversion of Plastic</h3>
+      <p>We target even the toughest plastic waste — HDPE, LDPE — converting them effectively into usable fuel. Using a low-cost catalyst (cast iron) and operating at low temperatures (150–200°C), we ensure energy-efficient pyrolysis that’s easy on the environment and on your budget.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/high-yield.jpg" alt="High Yield">
+      <h3>High Fuel Yield</h3>
+      <p>With cutting-edge design, our system can convert up to <strong>70% of pyrolysis gas</strong> into high-quality crude oil — that’s remarkable output from minimal plastic input, making the process highly scalable and sustainable.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/low-cost.jpg" alt="Low Cost Reactor">
+      <h3>Cost-Effective & Scalable</h3>
+      <p>We utilize easily available materials and affordable components to keep the pilot plant low-cost, yet powerful. Our innovation is built to serve communities, not just corporations — a cleaner future within everyone's reach.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/green-fuel.jpg" alt="Green Fuel">
+      <h3>Cleaner, Greener Fuel</h3>
+      <p>The fuel we generate is low in carbon, high in efficiency, and meets green energy benchmarks. It's ready to power homes, industries, and vehicles — while leaving a lighter footprint on our planet.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Technology Section -->
+<section id="tech" style="display:none;">
+  <h2>Our Technology</h2>
+  <p>Using AI-integrated pyrolysis, FuelTure safely converts plastic waste into high-value fuel with minimal emissions and smart monitoring. Our sensor-based system ensures efficiency, safety, and automation.<br>
+<br>
+Technical Note: FuelTure Technology<br>
+<br>
+Introduction<br>
+FuelTure is an innovative technology aimed at revolutionizing the energy sector by converting plastic waste into clean, sustainable fuel. The process employs a combination of pyrolysis and smart, AI-integrated systems, ensuring both high efficiency and minimal environmental impact. By harnessing cutting-edge machine learning algorithms and a network of real-time sensors, FuelTure is not just an energy solution—it’s a step towards a more sustainable and circular economy.<br>
+<br>
+Core Technology: Pyrolysis and AI Integration<br>
+Pyrolysis is a thermal decomposition process that converts organic materials, such as plastic waste, into valuable products like fuel, gas, and char. FuelTure's technology optimizes this process using a combination of:<br>
+AI-Integrated Pyrolysis: FuelTure's system utilizes machine learning (ML) models to adjust key process parameters in real-time. These include:<br>
+A)Temperature Control: Dynamic regulation of the reactor temperature to maximize fuel yield while maintaining safety and efficiency.<br>
+B)Feedstock Ratio: Real-time adjustment of the plastic-to-catalyst ratio for optimal fuel production.<br>
+C)Reaction Time: Monitoring and adjusting the reaction time to ensure maximum conversion efficiency and minimal emissions.<br>
+D)Smart Sensor Network: To enhance operational efficiency and safety, FuelTure employs a comprehensive network of sensors. These sensors monitor critical parameters such as:<br>
+<br>
+A)Temperature Sensors: Ensuring optimal heating within the pyrolysis reactor.<br>
+B)Gas Sensors: Detecting the composition of gases produced, ensuring the safety and purity of outputs.<br>
+C)Pressure Sensors: Preventing overpressure situations within the system, ensuring safe and smooth operation.<br>
+D)Safety Triggers: Automatically shutting down the system or adjusting parameters when abnormal readings are detected, reducing the risk of hazardous conditions.<br>
+<br>
+Automated Control System: With the integration of machine learning, FuelTure’s control system can autonomously adjust the pyrolysis conditions based on real-time data. This reduces the need for human intervention and makes the process more efficient, reliable, and scalable.<br>
+<br>
+Environmental Impact<br>
+FuelTure's technology significantly reduces plastic waste, one of the most persistent pollutants in our environment. By converting plastic into usable fuel, we not only reduce landfill waste but also decrease the carbon footprint associated with traditional fuel production. Additionally, the output fuel has a lower carbon content, contributing to cleaner energy alternatives.<br>
+<br>
+Energy Output and Efficiency<br>
+The pyrolysis process in FuelTure generates three primary outputs:<br>
+A)Pyrolysis Oil (Fuel): The primary product, which can be refined and used as a substitute for traditional petroleum-based fuels.<br>
+B)Syngas (Synthesis Gas): A mixture of gases such as methane, hydrogen, and carbon monoxide, which can be used for power generation or as a feedstock for further chemical processes.<br>
+C)Char: A solid byproduct that can be used for various applications, such as in construction materials or as activated carbon.<br>
+<br>
+The efficiency of the system is enhanced by real-time monitoring and adjustments, ensuring optimal energy extraction from each batch of plastic waste.<br>
+<br>
+Conclusion
+FuelTure represents a significant leap forward in both waste management and energy production. By leveraging AI, machine learning, and a sensor-driven approach, FuelTure ensures that plastic waste is transformed into a valuable resource while minimizing environmental impact. This technology provides an efficient, scalable, and sustainable solution for the global challenge of plastic pollution, offering a cleaner future powered by innovation.<br>
+
+</p>
+</section>
+
+<!-- Team Section -->
+<section id="team" style="display:none;">
+  <h2>Meet Our Core Team</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="images/tania.jpg" alt="Tania Baidya">
+      <h3>Tania Baidya</h3>
+      <p>Founder<br>B.Tech ECE, Techno International New Town</p>
+    </div>
+    <div class="card">
+      <img src="images/ezaz.jpg" alt="Ezaz Alam">
+      <h3>Ezaz Alam</h3>
+      <p>Co-Founder<br>B.Tech ECE, Techno International New Town</p>
+    </div>
+    <div class="card">
+      <img src="images/prasun.jpg" alt="Prasun Majumder">
+      <h3>Prasun Majumder</h3>
+      <p>Chief Operations Officer<br>B.Tech ECE, Techno International New Town</p>
+    </div>
+    <div class="card">
+      <img src="images/anish.jpg" alt="Anish Chakraborty">
+      <h3>Anish Chakraborty</h3>
+      <p>Marketing and Social Media Analyst<br>B.Tech ECE, Techno International New Town</p>
+    </div>
+  </div>
+</section>
+
+<!-- Mentors Section -->
+<section id="mentors" style="display:none;">
+  <h2>Our Mentors</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="images/partha.jpg" alt="Dr.Partha Pratim Chakroborty">
+      <h3>Dr.Partha Pratim Chakroborty</h3>
+      <p>Chemistry and Innovation Mentor<br>Assistant Professor Basic Science and Humanities Dept., Techno International New Town</p>
+    </div>
+    <div class="card">
+      <img src="images/tapas.jpg" alt="Dr. Tapas Kumar Nandi">
+      <h3>Dr. Tapas Kumar Nandi</h3>
+      <p>Technical Mentor<br>Professor & HOD(Mechanical Engineering), Techno International New Town</p>
+    </div>
+    <div class="card">
+      <img src="images/abc.jpg" alt="Mr. Partha Banerjee">
+      <h3>Mr. Partha Banerjee</h3>
+      <p>Technical Mentor<br>Technical Assistant(Mechanical Engineering), Techno International New Town</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 FuelTure | Powered by Youth for a Sustainable Tomorrow
+</footer>
+
+<script>
+  function openSection(id) {
+    document.querySelectorAll('section[id]').forEach(sec => sec.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+    window.scrollTo({ top: document.getElementById(id).offsetTop - 50, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
